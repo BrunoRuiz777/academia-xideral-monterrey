@@ -35,7 +35,15 @@ public abstract class GameCharacter implements Attackable {
         if (this.health < 0) {
             this.health = 0;
         }
+    }
 
+    // metodo para curar al personaje tomando en cuenta su vida maxima
+    public void heal(int amount) {
+        this.health += amount;
+        if (this.health > this.maxHealth) {
+            this.health = this.maxHealth;
+        }
+        System.out.println(this.getName() + " recupera vida. (Salud actual: " + this.health + ")");
     }
 
     // dejamos este metodo abstracto para que cada personaje pueda definir como celebrar su vistoria, no retorna nada, es publico.
