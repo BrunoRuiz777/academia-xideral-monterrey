@@ -1,7 +1,7 @@
 package entities;
 
-// clase warrior que hereda de GameCharacter (el Is-A) e implementa interface de attackable
-public class Warrior extends GameCharacter implements Attackable {
+// clase warrior que hereda de GameCharacter (el Is-A) e implementa interface de attackable y no es necesario implements de interface attackable
+public class Warrior extends GameCharacter {
 
     // constructor de guerrero, solo pedimos el nombre y usamos super() para enviarle ese nombre y los 150 de vida base al constructor de la clase padre.
     public Warrior(String name) {
