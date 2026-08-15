@@ -1,0 +1,10 @@
+# Archivos de IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.workspace.xml
+
+# Archivos compilados
+out/
+target/
+*.class
